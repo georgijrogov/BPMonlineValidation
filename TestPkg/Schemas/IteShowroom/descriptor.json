@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "62f2c895-2dc4-4a58-92af-e07dc817cafb",
+    "Name": "IteShowroom",
+    "ModifiedOnUtc": "\/Date(1617576611000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Автосалон"
+  }
+}

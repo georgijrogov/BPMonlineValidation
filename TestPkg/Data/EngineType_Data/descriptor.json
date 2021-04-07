@@ -1,0 +1,35 @@
+﻿{
+  "Descriptor": {
+    "UId": "d7db275e-92ae-4b0f-8c4f-ba28ab985378",
+    "Name": "EngineType_Data",
+    "ModifiedOnUtc": "\/Date(1617574768000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "f2dcca1b-d1a7-4e43-a927-3143b34a24ac",
+      "Name": "IteEngineType"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": true,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      }
+    ]
+  }
+}

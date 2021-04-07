@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница редактирования: &quot;Автосалон&quot;" />
+			<Item Name="LocalizableStrings.engineTypesValidationButtonCaption.Value" Value="Валидация по типу двигателя" />
+			<Item Name="LocalizableStrings.failureCaption.Value" Value="Не хватает автомобилей со следующими типами двигателей: {0}" />
+			<Item Name="LocalizableStrings.successCaption.Value" Value="В наличии автомобили со всеми типами двигателей" />
+			<Item Name="LocalizableStrings.Tabc40f57d7TabLabelTabCaption.Value" Value="Автомобиль" />
+		</Items>
+	</Group>
+</Resources>

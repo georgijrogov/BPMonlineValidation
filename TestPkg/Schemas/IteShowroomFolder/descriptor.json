@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "38bbd041-28d0-46cd-b1fd-d277ca3efb1f",
+    "Name": "IteShowroomFolder",
+    "ModifiedOnUtc": "\/Date(1617576613000)\/",
+    "Parent": {
+      "UId": "d602bf96-d029-4b07-9755-63c8f5cb5ed5",
+      "Name": "BaseFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Группа Автосалон"
+  }
+}

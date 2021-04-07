@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "30967eb9-3979-4522-8708-8f276e7683cf",
+    "Name": "IteCar",
+    "ModifiedOnUtc": "\/Date(1617577458000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Автомобиль"
+  }
+}

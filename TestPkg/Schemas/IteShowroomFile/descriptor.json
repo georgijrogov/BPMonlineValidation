@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "c83c4f1c-6a71-4abe-8a97-ea9aaca46049",
+    "Name": "IteShowroomFile",
+    "ModifiedOnUtc": "\/Date(1617576612000)\/",
+    "Parent": {
+      "UId": "556c5867-60a7-4456-aae1-a57a122bef70",
+      "Name": "File"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Файл и ссылка объекта Автосалон"
+  }
+}

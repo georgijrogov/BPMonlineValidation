@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "9500b26a-1b5a-4ff3-b2a2-b97a19527b7e",
+    "Name": "IteShowroomTag",
+    "ModifiedOnUtc": "\/Date(1617576615000)\/",
+    "Parent": {
+      "UId": "9e3f203c-e905-4de5-9468-335b193f2439",
+      "Name": "BaseTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тег раздела Автосалон"
+  }
+}

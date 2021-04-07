@@ -1,0 +1,15 @@
+﻿{
+  "Descriptor": {
+    "UId": "f4fe44e6-72eb-455b-972a-638ef78aafeb",
+    "Name": "TestPkg",
+    "ModifiedOnUtc": "\/Date(1617567914000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "99707b27-fb9d-4a8d-a9ce-313a68e7423f",
+        "PackageVersion": "7.8.0",
+        "Name": "ServiceEnterpriseSoftkey"
+      }
+    ]
+  }
+}

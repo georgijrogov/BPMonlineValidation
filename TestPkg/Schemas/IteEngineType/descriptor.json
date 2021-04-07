@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "f2dcca1b-d1a7-4e43-a927-3143b34a24ac",
+    "Name": "IteEngineType",
+    "ModifiedOnUtc": "\/Date(1617572110000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тип двигателя"
+  }
+}

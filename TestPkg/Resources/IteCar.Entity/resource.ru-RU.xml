@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Автомобиль" />
+			<Item Name="Columns.IteBrand.Caption" Value="Марка" />
+			<Item Name="Columns.IteEngineType.Caption" Value="Тип двигателя" />
+			<Item Name="Columns.IteModel.Caption" Value="Модель" />
+			<Item Name="Columns.IteShowroom.Caption" Value="Автосалон" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>
