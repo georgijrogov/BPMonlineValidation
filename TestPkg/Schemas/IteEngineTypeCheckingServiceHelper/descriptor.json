@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "f33a93bd-deb8-42d6-a2dd-0a3e4afc48d3",
     "Name": "IteEngineTypeCheckingServiceHelper",
-    "ModifiedOnUtc": "\/Date(1617799445000)\/",
+    "ModifiedOnUtc": "\/Date(1619867334000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "Сервис валидирования типов двигателей (helper)"
   }

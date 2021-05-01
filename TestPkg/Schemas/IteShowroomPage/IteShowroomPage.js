@@ -59,7 +59,7 @@ define("IteShowroomPage", ["ServiceHelper"], function(ServiceHelper) {
 							return;
 						} else {
 							var failure = this.get("Resources.Strings.failureCaption");
-							result.message = this.showInformationDialog(failure.replace("{0}", responseResult.message));
+							result.message = Ext.String.format(failure, responseResult.message);
 							result.success = false;
 						}
 					}

@@ -18,24 +18,29 @@ namespace Terrasoft.Configuration.IteEngineTypeCheckingService
 			_userConnection = userConnection;
 		}
 		
-		public IEnumerable<string> GetActualEngineTypes(string showroomId)
+		public IEnumerable<EngineType> GetActualEngineTypes(string showroomId)
 		{
 			var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "IteCar");
-			var engineTypeCol = esq.AddColumn("IteEngineType.Name");
+			esq.IsDistinct = true;
+			var engineTypeIdCol = esq.AddColumn("IteEngineType.Id");
+			var engineTypeNameCol = esq.AddColumn("IteEngineType.Name");
 			var esqFilter = esq.CreateFilterWithParameters(FilterComparisonType.Equal, "IteShowroom.Id", showroomId);
 			esq.Filters.Add(esqFilter);
 			var entities = esq.GetEntityCollection(_userConnection);
-			var actualEngineTypes = entities.Select(x => x.GetTypedColumnValue<string>(engineTypeCol.Name)).Distinct();
+			var actualEngineTypes = entities.Select(x => new EngineType { Id = x.GetTypedColumnValue<Guid>(engineTypeIdCol.Name),
+				Name = x.GetTypedColumnValue<string>(engineTypeNameCol.Name)});
 
 			return actualEngineTypes;
 		}
 		
-		public IEnumerable<string> GetAllEngineTypes()
+		public IEnumerable<EngineType> GetAllEngineTypes()
 		{
 			var esq = new EntitySchemaQuery(_userConnection.EntitySchemaManager, "IteEngineType");
-			var engineTypeCol = esq.AddColumn("Name");
+			var engineTypeIdCol = esq.AddColumn("Id");
+			var engineTypeNameCol = esq.AddColumn("Name");
 			var entities = esq.GetEntityCollection(_userConnection);
-			var allEngineTypes = entities.Select(x => x.GetTypedColumnValue<string>(engineTypeCol.Name));
+			var allEngineTypes = entities.Select(x => new EngineType { Id = x.GetTypedColumnValue<Guid>(engineTypeIdCol.Name),
+				Name = x.GetTypedColumnValue<string>(engineTypeNameCol.Name)});
 			
 			return allEngineTypes;
 		}
@@ -45,9 +50,15 @@ namespace Terrasoft.Configuration.IteEngineTypeCheckingService
 			var actualEngineTypes = GetActualEngineTypes(showroomId);
 			var allEngineTypes = GetAllEngineTypes();
 			
-			var missingEngineTypes = allEngineTypes.Except(actualEngineTypes);
-			
-			return missingEngineTypes.Any() ? string.Join(", ", missingEngineTypes) : string.Empty;
+			var missingEngineTypes = allEngineTypes.Where(x => !actualEngineTypes.Select(i => i.Id).Contains(x.Id));
+			var missingEngineTypesNames = missingEngineTypes.Select(x => x.Name);
+
+			return missingEngineTypes.Any() ? string.Join(", ", missingEngineTypesNames) : string.Empty;
 		}
+	}
+	public class EngineType
+	{
+		public Guid Id { get; set; }
+		public string Name { get; set; }
 	}
 }
